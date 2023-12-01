@@ -1,0 +1,103 @@
+@media screen and (max-width: 1150px) {
+  /* ============== */
+  /* NAVIGATION */
+
+  
+  .navigation .menu{
+    height: calc(100vh - 150px);
+    position: absolute;
+    top: 150px ;
+    left: 200%;
+    translate: -100% 0;   
+    width: 500px;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+
+  .menu .navi{
+    flex-direction: column;
+
+  }
+
+
+  label[for="check"]{
+    display: block;
+  }
+
+  
+  
+  
+  
+  
+  
+  /* header,
+    footer,
+    section {
+      padding: 0px 0px;
+    } */
+
+  header {
+    padding: 50px 0;
+  }
+
+
+
+  .hd-content,
+  .hd-content3,
+  .hd-content4,
+  .smart-home,
+  .monitor,
+  .about,
+  .check .images {
+    flex-wrap: wrap;
+  }
+
+  .hd-content > [class^="hd"],  .smart-home > * ,.monitor > * , .about > * {
+    width: 60%;
+  }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+  .hd-content > [class^="hd"],  .smart-home > * ,.monitor > * , .about > * {
+    width: 70%;
+  }
+
+  .navigation .menu{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .hd-content > [class^="hd"],  .smart-home > * ,.monitor > * , .about > * {
+    width: 80%;
+  }
+
+  header,section,footer{
+    padding: 1px 10px;
+  }
+
+  .hd-content .hd-text {
+    padding: 20px 10px;
+  }
+
+  html{
+    font-size: 9px;
+  }
+
+  .navigation .menu{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hd-content > [class^="hd"],  .smart-home > * ,.monitor > * , .about > * {
+    width: 100%;
+  }
+
+  html{
+    font-size: 7.5px;
+  }
+}
